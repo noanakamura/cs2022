@@ -1,11 +1,11 @@
 module TemplateAlgo where
 
-    main :: IO ()
-    main = interact proc
+main :: IO ()
+main = interact func
 
-    proc :: String -> String
-    proc input = case map (map readInt . words) (lines input) of
-        _ -> undefined
+func :: String -> String
+func input = case map (map readInt . words) (lines input) of
+    _ -> undefined
 
-    readInt :: String -> Int    
-    readInt = read
+readInt :: String -> Int    
+readInt = read
