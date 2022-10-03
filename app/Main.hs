@@ -32,6 +32,6 @@ func :: String -> String
 -- func input = case readInt input of
 --     n -> showInt (n `mod` 5)
 
-func input = case words input o
+func input = case words input of
     s:_ -> unlines [concat (replicate 3 s)]
     []  -> error "invalid input"
